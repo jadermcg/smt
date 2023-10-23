@@ -18,3 +18,9 @@ By combining these algorithms, the `SMT` offers an efficient and robust solution
 
 # When to use SMT
 `SMT` was built with the main objective of assisting in the analysis of biological motifs. However, it can be used in any situation in which it is necessary to count kmers or perform operations on kmers, such as knowing which are the most frequent or which are the most frequent considering a certain number of mutations.
+
+# Getting Started
+Follow the instructions below to be able to run SMT.
+
+## Prerequisites
+Before installing the SMT package, make sure you meet the following prerequisites:
