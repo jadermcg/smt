@@ -1,3 +1,5 @@
+![smt](smt.jpg)
+
 # Sparse Motif Tree (SMT)
 
 The Sparse Motif Tree (`SMT`) is an innovative C++/Linux framework designed to store and count k-mers efficiently in large volumes of genomic data. `SMT` optimizes memory usage and computation time, enabling rapid and accurate analysis of DNA and RNA sequences. Detecting conserved motifs and patterns within sequences is crucial for understanding gene functions and regulations and for identifying functional and structural elements in the genome.
