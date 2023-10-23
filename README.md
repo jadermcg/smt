@@ -16,22 +16,22 @@ The algorithm `KHmap` improves the capabilities of `Hmap`, allowing for the extr
 
 By combining these algorithms, the `SMT` offers an efficient and robust solution for genomic data analysis, contributing to a better understanding of gene functions and regulations and assisting in the identification of functional and structural elements in the genome.
 
-# When to use SMT
+## When to use SMT
 `SMT` was built with the main objective of assisting in the analysis of biological motifs. However, it can be used in any situation in which it is necessary to count kmers or perform operations on kmers, such as knowing which are the most frequent or which are the most frequent considering a certain number of mutations.
 
-# Getting Started
+## Getting Started
 Follow the instructions below to be able to run SMT.
 
-## Prerequisites and dependencies
+### Prerequisites and dependencies
 Before installing the SMT package, make sure you meet the following prerequisites.
 
-### Operating System
+#### Operating System
 - Linux
 
-### Programming Language
+#### Programming Language
 - C++17
 
-### Compilation Flags
+#### Compilation Flags
 - `-std=c++17`
 - `-O3`
 - `-march=native`
@@ -41,11 +41,11 @@ Before installing the SMT package, make sure you meet the following prerequisite
 - `-Wno-ignored-attributes`
 - `-I/usr/include/hdf5/serial`
 
-### Linker Variables
+#### Linker Variables
 - `-L/lib/x86_64-linux-gnu`
 - `-L/usr/lib`
 
-### Libraries
+#### Libraries
 To run this project, the following dynamic libraries are required:
 
 - `libboost_filesystem.so.1.74.0`
@@ -56,7 +56,7 @@ To run this project, the following dynamic libraries are required:
 - `libc.so.6`
 - `libm.so.6`
 
-### Linker Variables
+#### Linker Variables
 - `-lboost_system`
 - `-lboost_filesystem`
 - `-lR`
@@ -64,8 +64,13 @@ To run this project, the following dynamic libraries are required:
 - `-lz`
 - `-ltbb`
 
-### Installation of Dependencies
+#### Dependencies
 To install the required dependencies, you can use the following command:
 
 ```bash
 sudo apt-get install libboost-filesystem-dev libtbb-dev libstdc++6 libgomp1 libgcc1 libc6 libm6
+
+## Quick Start
+
+### Instalation
+First, you need to download all the contents of the bin directory from this GitHub repository. You can do this easily with svn. First install subversion: ```sudo apt install subversion``` and then run the following command within the directory in which you want to install Biomapp::chip: ```svn export https://github.com/jadermcg/ biomapp-chip/trunk/bin```.
