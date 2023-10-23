@@ -93,3 +93,44 @@ You can place this command inside your local user's .bashrc file so that you don
 echo 'export PATH=$PATH:/path/to/your/smt/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
+
+#### Usage
+```
+Use: smt -i <fasta> -k <size of kmer> -s <priori memory allocation>
+```
+#### Example
+To understand how the program works, you can run `SMT` on the example dataset that is provided in the project root.
+
+```
+biomapp -i MA0047.3.fasta.dust -k 11 -s 256
+```
+This execution of `SMT` will process the dataset MA0047.3.fasta.dust using kmers of length 11 with 256Mb priori memory allocation. Executing this command will create a smt_data directory in the same location where the statement was executed. Inside smt_data, we have two files, SMT.db which is the database with kmers and their respective counts and meta.txt, which has some metadata, such as batch quantities and size of k. After executing the above command, other algorithms can be executed, such as kdive, hmap and khmap.
+
+All commands below need to be executed after creating the SMT.db database:
+
+##### Ksearch
+Searches for a specific kmers on SMT and returns their frequency.
+
+```
+Use: ksearch -kmer <kmer>
+```
+
+##### Hmap
+Creates a file inside `smt_data` called `hmap.txt` with all kmer counts.
+
+```
+Use: hmap
+```
+
+##### KHmap
+Extracts from `SMT` maps with size `k` less than or equal to `kmax` (`k `value that was used when creating the SMT.db database).
+```
+Use: khmap -k <size of kmer> > out_map.txt
+```
+
+##### Kdive
+Creates a directory in `smt_data` called `kdive_dir`. Inside it, there is a .txt file with the kmers and the respective counts for each of the kmers present in the `kmers.txt` file.
+
+```
+kdive -kmers <path to kmers> -d <number of mutations>
+```
