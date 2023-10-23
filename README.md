@@ -69,6 +69,7 @@ To install the required dependencies, you can use the following command:
 
 ```bash
 sudo apt-get install libboost-filesystem-dev libtbb-dev libstdc++6 libgomp1 libgcc1 libc6 libm6
+```
 
 ## Quick Start
 
