@@ -22,5 +22,50 @@ By combining these algorithms, the `SMT` offers an efficient and robust solution
 # Getting Started
 Follow the instructions below to be able to run SMT.
 
-## Prerequisites
-Before installing the SMT package, make sure you meet the following prerequisites:
+## Prerequisites and dependencies
+Before installing the SMT package, make sure you meet the following prerequisites.
+
+### Operating System
+- Linux
+
+### Programming Language
+- C++17
+
+### Compilation Flags
+- `-std=c++17`
+- `-O3`
+- `-march=native`
+- `-fopenmp`
+- `-DARMA_64BIT_WORD`
+- `-DARMA_USE_HDF5`
+- `-Wno-ignored-attributes`
+- `-I/usr/include/hdf5/serial`
+
+### Linker Variables
+- `-L/lib/x86_64-linux-gnu`
+- `-L/usr/lib`
+
+### Libraries
+To run this project, the following dynamic libraries are required:
+
+- `libboost_filesystem.so.1.74.0`
+- `libtbb.so.12`
+- `libstdc++.so.6`
+- `libgomp.so.1`
+- `libgcc_s.so.1`
+- `libc.so.6`
+- `libm.so.6`
+
+### Linker Variables
+- `-lboost_system`
+- `-lboost_filesystem`
+- `-lR`
+- `-lblas`
+- `-lz`
+- `-ltbb`
+
+### Installation of Dependencies
+To install the required dependencies, you can use the following command:
+
+```bash
+sudo apt-get install libboost-filesystem-dev libtbb-dev libstdc++6 libgomp1 libgcc1 libc6 libm6
