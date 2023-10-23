@@ -106,7 +106,7 @@ biomapp -i MA0003.4.fasta.dust -k 14 -s 256
 ```
 This execution of `SMT` will process the dataset MA0003.4.fasta.dust using kmers of length 14 with 256Mb priori memory allocation. Executing this command will create a smt_data directory in the same location where the statement was executed. Inside smt_data, we have two files, SMT.db which is the database with kmers and their respective counts and meta.txt, which has some metadata, such as batch quantities and size of k. After executing the above command, other algorithms can be executed, such as kdive, hmap and khmap.
 
-**All commands below need to be executed after creating the SMT.db database:**
+**_All commands below need to be executed after creating the SMT.db database:_**
 
 ##### Ksearch
 Searches for a specific kmers on SMT and returns their frequency.
