@@ -1,6 +1,6 @@
 ![smt](https://github.com/jadermcg/smt/blob/651edcee1e16a5a41bcf337d86024ff3df3a8161/smt.png)
 
-# Kflex + Sparse Motif Tree: An Efficient Framework for Counting and Manipulating Kmers.
+# Kflex + Sparse Motif Tree: an efficient framework for counting and manipulating kmers.
 
 The Sparse Motif Tree (`SMT`) is an innovative C++/Linux framework designed to store and count k-mers efficiently in large volumes of genomic data. `SMT` optimizes memory usage and computation time, enabling rapid and accurate analysis of DNA and RNA sequences. Detecting conserved motifs and patterns within sequences is crucial for understanding gene functions and regulations and for identifying functional and structural elements in the genome.
 
