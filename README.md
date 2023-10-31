@@ -103,7 +103,7 @@ source ~/.bashrc
 Use: smt -i <fasta> -k <size of kmer> -s <priori memory allocation>
 ```
 #### Example
-To understand how the program works, you can run `SMT` on the example dataset that is provided in the project root. More datasets can be found [here]():
+To understand how the program works, you can run `SMT` on the example dataset that is provided in the project root. More datasets can be found [here]().
 
 ```
 biomapp -i MA0003.4.fasta.dust -k 14 -s 256
