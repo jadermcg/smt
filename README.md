@@ -1,6 +1,6 @@
 ![smt](https://github.com/jadermcg/smt/blob/651edcee1e16a5a41bcf337d86024ff3df3a8161/smt.png)
 
-:rocket: **If you are interested in the new updated version of the program, which is faster and more efficient, please visit the following git page: [Click Here!](https://github.com/jadermcg/kflex)** :rocket:
+:rocket: **If you are interested in the new updated version of this program, which is faster and more efficient, please visit the following git page: [Click Here!](https://github.com/jadermcg/kflex)** :rocket:
 
 # SMT: an efficient data structure for handling kmers.
 
